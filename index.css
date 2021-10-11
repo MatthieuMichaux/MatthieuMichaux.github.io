@@ -45,3 +45,7 @@ p{
     border-radius: 12px;
     outline-offset: 15px;
 
+.footer {
+    background-color: beige;
+    text-align: center;
+}
