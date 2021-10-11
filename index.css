@@ -36,3 +36,12 @@ p{
     margin: auto;
 }
 
+.chartbox{
+    border:rgb(247, 247, 197);
+    margin: auto;
+    background-color: rgb(247, 247, 197);
+    padding: 15px;
+    border: 1px solid rgb(109, 114, 88);
+    border-radius: 12px;
+    outline-offset: 15px;
+
