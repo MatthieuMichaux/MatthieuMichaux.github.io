@@ -35,13 +35,13 @@
       <p>This portfolio was realised as part of my Data Science module.<br> </p>
     
     <br>
-
+<div class="chartbox">
     <h3>Covid-19</h3>
 
     <p>The first chart tracks <strong>Covid-19</strong> cases by UK region.</p>
 
 <!--Vaga embed, with notes for what is going on-->
-<div class="chart" id="firstChart">
+    <div class="chart" id="firstChart">
 
   <script>
     // Following the script tag we are using Javascript.
@@ -53,8 +53,10 @@
     vegaEmbed('#firstChart', myChart1);
   </script>
 
+    </div>     
 </div>
-
+  
+<div class="chartbox">    
     <h3><br>Productivity puzzle</h3>
 
     <p>My second chart looks at <strong>productivity</strong> in the UK</p>
@@ -64,8 +66,10 @@
     var myChart2 = "chart2_ukProductivity.json";
     vegaEmbed('#secondChart', myChart2);
   </script>
-</div>
-  
+    </div>
+</div>    
+    
+<div class="chartbox">    
     <h3><br>Ozone emissions</h3>
 
   <p>My third chart looks at <strong>ozone emissions</strong></p>
@@ -75,8 +79,10 @@
     var myChart3 = "chart4_ozoneemissionsAPI.json";
     vegaEmbed('#thirdChart', myChart3);
   </script>
+    </div>
 </div>
     
+<div class="chartbox">      
 <h3><br>New Daily Covid cases 1</h3>
 
     <p>My fourth chart looks at new <strong>Covid-19</strong> cases (direct API link) </p>
@@ -89,8 +95,10 @@
     var myChart4 = "chart5_covidliveAPI.json";
     vegaEmbed('#fourthChart', myChart4);
   </script>
-</div> 
+    </div> 
+ </div>    
     
+<div class="chartbox">  
 <h3><br>New Daily Covid cases 2</h3>
 
     <p>My fifth chart looks at new <strong>Covid-19</strong> cases (linked to live CSV file) </p>
@@ -105,8 +113,8 @@
     var myChart5 = "chart6_covidviagithub.json";
     vegaEmbed('#fifthChart', myChart5);
   </script>
-</div> 
-
+    </div> 
+</div>
  <p id="#para1">provided to you by Matthieu Michaux</p>   
 </body>
 
