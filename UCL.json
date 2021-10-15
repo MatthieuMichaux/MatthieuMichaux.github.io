@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Club soccer predictions",
+  "data": {
+    "values": [
+      {"UCL clubs": "Man. City", "Probability of winning the final (in %)": 22}, {"UCL clubs": "Bayern Munich", "Probability of winning the final (in %)": 18}, {"UCL clubs": "Liverpool", "Probability of winning the final (in %)": 11},
+      {"UCL clubs": "PSG", "Probability of winning the final (in %)": 3}, {"UCL clubs": "Chelsea", "b": 8}, {"UCL clubs": "Real Madrid", "Probability of winning the final (in %)": 4}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "UCL clubs", "type": "nominal", "axis": {"labelAngle": 270}},
+    "y": {"field": "Probability of winning the final (in %)", "type": "quantitative"}
+  }
+}
