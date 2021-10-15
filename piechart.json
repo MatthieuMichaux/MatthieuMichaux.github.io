@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with embedded data.",
+    "data": {
+      "values": [
+        {"Category": 1, "value": 4},
+        {"Category": 2, "value": 6},
+        {"Category": 3, "value": 10},
+        {"Category": 4, "value": 3},
+        {"Category": 5, "value": 7},
+        {"Category": 6, "value": 8},
+        {"Category": 7, "value": 8}
+      ]
+    },
+    "mark": "arc",
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative"},
+      "color": {"field": "Category", "type": "nominal"}
+    }
+  }
+  
