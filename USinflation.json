@@ -1,0 +1,12 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "US inflation",
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/USinflation.csv"},
+    
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "DATE", "type": "temporal"},
+      "y": {"field": " Inflation US (%)", "type": "quantitative"}
+    }
+  }
+  
