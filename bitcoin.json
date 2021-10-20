@@ -1,0 +1,21 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": {
+      "text": "Bitcoin traded this year",
+      "subtitle":"Volume traded, weekly",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "description": "Volume traded of Bitcoin.",
+    "data": {"url": "https://rest.coinapi.io/v1/ohlcv/BTC/USD/history?period_id=7DAY&time_start=2021-01-01T00:00:00&limit=100&include_empty_items=false&apikey=E46F7B18-AE0B-482C-8230-73A1AE68CF10"},
+    
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "time_period_start", "type": "temporal", "title":"Date"},
+      "y": {"field": "volume_traded", "type": "quantitative", "title":""}
+    }
+  }
+  
