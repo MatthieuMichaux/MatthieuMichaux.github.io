@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=ae7b9620-31b1-11ec-8547-0bc33ee23f3b&season_id=2022&date_from=2021-09-19",
+    "format":{
+      "type": "json",
+      "property": "data"
+    }
+    },
+  
+      "title": {
+      "text": "Ligue 1- goals",
+      "subtitle":["Goals scored away, 21/22 season",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+  
+    },
+  
+    "transform": [
+      {"filter":{"field":"away_team.name", "oneOf": ["Olympique Marseille", "SCO Angers", "Paris Saint-Germain", "OGC Nice", "RC Lens", "Olympique Lyonnais"]}}
+    ],
+  
+    "mark": {
+      "type":"bar",
+      "color":"rgb(0,67,167)"},
+  
+    "height":100,
+    "width":150,
+    "padding":{
+      "top":0,
+      "bottom":0,
+      "right":0,
+      "left":0
+    },
+    
+    "encoding": {
+  
+      "x": {
+        "field": "match_start", 
+        "type": "temporal",
+        "title":null},
+  
+      "y": {
+        "field": "stats.away_score", 
+        "type": "quantitative",
+        "title":null},
+  
+       "facet":{
+         "field": "away_team.name",
+         "columns": 2,
+         "title":null,
+         "spacing":15
+       } 
+    }
+  }
+  
