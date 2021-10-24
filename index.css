@@ -44,6 +44,25 @@ p{
     border: 1px solid rgb(109, 114, 88);
     border-radius: 12px;
     outline-offset: 15px;
+    
+a:link, a:visited {
+    background-color: transparent;
+    border-radius: 12px;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+
+    
+}
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+  }
 
 .footer {
     background-color: beige;
