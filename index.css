@@ -46,12 +46,12 @@ p{
     outline-offset: 15px;
     
 a:link, a:visited {
-    background-color: transparent;
+    background-color: white;
     border-radius: 12px;
     color: black;
     border: 2px solid green;
     padding: 10px 20px;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.4s;
