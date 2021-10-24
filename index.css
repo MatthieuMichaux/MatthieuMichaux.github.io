@@ -44,6 +44,7 @@ p{
     border: 1px solid rgb(109, 114, 88);
     border-radius: 12px;
     outline-offset: 15px;
+}
     
 .button:link, .button:visited {
     background-color: white;
@@ -62,7 +63,7 @@ p{
   .button:hover, .button:active {
     background-color: green;
     color: white;
-  }
+}
 
 .footer {
     background-color: beige;
