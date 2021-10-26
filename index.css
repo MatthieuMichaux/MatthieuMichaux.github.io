@@ -31,9 +31,9 @@ p{
     width:330px;
     border-width: 10px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 12px;
     border-color: white;
-    margin: auto;
+    margin: center;
 }
 
 .chartbox{
@@ -48,16 +48,17 @@ p{
 }
     
 .button:link, .button:visited {
-    background-color: white;
+    background-color: transparent;
     border-radius: 12px;
     color: black;
     border: 2px solid green;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    display: inline-block;
     transition-duration: 0.4s;
-
+    float: center;
+    margin: 2px;   
+    
     
 }
   
@@ -67,8 +68,10 @@ p{
 }
 
 .footer {
-    background-color: beige;
-    text-align: center;
+    background-color: grey;
+    color:white;
+    text-align: right;
+    border-top: 1px solid black;
 }
 
 .grid-container{
