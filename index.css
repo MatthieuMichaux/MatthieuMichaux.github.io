@@ -3,7 +3,7 @@
 body{
     background-color: beige;
     margin: auto;
-    max-width: 450px;
+    max-width: fit-content;
 }
 h1{
     color:rgb(17, 17, 17);
