@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "Real Gross Domestic Product for Denmark",
+  
+     "title": {
+      "text": "Real Gross Domestic Product for Denmark",
+      "subtitle":"Millions of Chained 2010 National Currency (FRED: CLVMNACSCAB1GQDK)",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/data_Fred-CLVMNACSCAB1GQDK.json",
+      "format": {
+          "type": "json", 
+          "property": "observations"}
+    },
+    
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "monotone",
+      "color": "blue"
+    },
+    
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": "Date",
+          "grid": false,
+          "labelSeparation": 10,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      }
+    }
+  }
