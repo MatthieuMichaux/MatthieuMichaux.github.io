@@ -38,12 +38,13 @@ p{
 
 .chartbox{
     border:rgb(247, 247, 197);
-    margin: auto;
+    width: 400px;
+    margin: 15px;
     background-color: rgb(247, 247, 197);
     padding: 15px;
     border: 1px solid rgb(109, 114, 88);
-    border-radius: 12px;
-    outline-offset: 15px;
+    border-radius: 12px;   
+    box-sizing: border-box;
 }
     
 .button:link, .button:visited {
