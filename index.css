@@ -69,3 +69,13 @@ p{
     background-color: beige;
     text-align: center;
 }
+
+.grid-container{
+    display:inline-grid;
+    grid-template-columns: auto auto;  
+}
+
+.grid-item{
+    background-color: transparent;
+}
+
