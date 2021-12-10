@@ -1,147 +1,147 @@
 country,happiness2021,GDP,Studied
-Afghanistan,2.5230,592,No
-Albania,5.1170,5991,No
-Algeria,4.8870,3364,No
-Argentina,5.9290,9122,No
-Armenia,5.2830,4125,No
-Australia,7.1830,62723,No
-Austria,7.2680,53859,No
-Azerbaijan,5.1710,4883,No
-Bahrain,6.6470,24294,No
-Bangladesh,5.0250,2138,No
-Belarus,5.5340,6487,No
-Belgium,6.8340,50103,No
-Benin,5.0450,1388,No
-Bolivia,5.7160,3624,No
-Bosnia and Herzegovina,5.8130,6728,No
-Botswana,3.4670,7817,No
-Brazil,6.3300,7011,No
-Bulgaria,5.2660,11321,No
-Burkina Faso,4.8340,876,No
-Burundi,3.7750,265,Yes
-Cambodia,4.8300,1720,No
-Cameroon,5.1420,1649,No
-Canada,7.1030,49222,No
-Chad,4.3550,741,No
-Chile,6.1720,15617,No
-China,5.3390,11819,Yes
-Colombia,6.0120,5753,No
-Comoros,4.2890,1420,No
-Costa Rica,7.0690,11806,No
-Croatia,5.8820,16247,No
-Cyprus,6.2230,29551,No
-Czech Republic,6.9650,25732,No
-Denmark,7.6200,67218,No
-Dominican Republic,5.5450,7951,No
-Ecuador,5.7640,5665,No
-Egypt,4.2830,3832,No
-El Salvador,6.0610,4031,No
-Estonia,6.1890,27101,No
-Eswatini,4.3080,3710,No
-Ethiopia,4.2750,952,No
-Finland,7.8420,54330,Yes
-France,6.6900,44995,No
-Gabon,4.8520,8601,No
-Gambia,5.0510,834,No
-Georgia,4.8910,4361,No
-Germany,7.1550,51860,No
-Ghana,5.0880,2374,No
-Greece,5.7230,19673,No
-Guatemala,6.4350,4439,No
-Guinea,4.9840,1141,No
-Haiti,3.6150,1943,No
-Honduras,5.9190,2586,No
-Hong Kong,5.4770,49036,No
-Hungary,5.9920,18075,No
-Iceland,7.5540,65273,No
-India,3.8190,2191,No
-Indonesia,5.3450,4256,No
-Iran,4.7210,8215,No
-Iraq,4.8540,4632,No
-Ireland,7.0850,94556,No
-Israel,7.1570,47602,No
-Italy,6.4830,34997,No
-Ivory Coast,5.3060,2567,No
-Jamaica,6.3090,5328,No
-Japan,5.9400,42928,No
-Jordan,4.3950,4358,No
-Kazakhstan,6.1520,9828,No
-Kenya,4.6070,2129,No
-Kuwait,6.1060,25290,No
-Kyrgyzstan,5.7440,1123,No
-Laos,5.0300,2773,No
-Latvia,6.0320,19824,No
-Lebanon,4.5840,2802,No
-Lesotho,3.5120,1178,No
-Liberia,4.6250,700,No
-Libya,5.4100,3617,No
-Lithuania,6.2550,22245,No
-Luxembourg,7.3240,131782,No
-Madagascar,4.2080,521,No
-Malawi,3.6000,432,No
-Malaysia,5.3840,11604,No
-Maldives,5.1980,11801,No
-Mali,4.7230,983,No
-Malta,6.6020,31576,No
-Mauritania,4.2270,2179,No
-Mauritius,6.0490,9639,No
-Mexico,6.3170,9246,No
-Moldova,5.7660,4638,No
-Mongolia,5.6770,4172,No
-Montenegro,5.5810,9064,No
-Morocco,4.9180,3415,No
-Mozambique,4.7940,425,No
-Myanmar,4.4260,1432,No
-Namibia,4.5740,4371,No
-Nepal,5.2690,1236,No
-Netherlands,7.4640,58003,No
-New Zealand,7.2770,47499,No
-Nicaragua,5.9720,1877,No
-Niger,5.0740,633,No
-Nigeria,4.7590,2432,No
-North Macedonia,5.1010,6657,No
-Norway,7.3920,81995,No
-Pakistan,4.9340,1260,No
-Panama,6.1800,13690,No
-Paraguay,5.6530,5146,No
-Peru,5.8400,6678,No
-Philippines,5.8800,3646,No
-Poland,6.1660,16930,No
-Portugal,5.9290,25065,No
-Republic of the Congo,5.3420,588,No
-Romania,6.1400,14968,No
-Russia,5.4770,11654,Yes
-Rwanda,3.4150,821,No
-Saudi Arabia,6.4940,22700,Yes
-Senegal,5.1320,1622,No
-Serbia,6.0780,8748,No
-Sierra Leone,3.8490,542,No
-Singapore,6.3770,64103,No
-Slovakia,6.3310,21529,No
-Slovenia,6.4610,28104,No
-South Africa,4.9560,5444,No
-South Korea,5.8450,34866,No
-Spain,6.4910,30996,No
-Sri Lanka,4.3250,3830,No
-Sweden,7.3630,58977,No
-Switzerland,7.5710,94696,Yes
-Taiwan,6.5840,32123,No
-Tajikistan,5.4660,810,No
-Tanzania,3.6230,1104,No
-Thailand,5.9850,7702,No
-Togo,4.1070,1016,No
-Tunisia,4.5960,3683,No
-Turkey,4.9480,9327,No
-Turkmenistan,5.0660,9032,No
-Uganda,4.6360,972,No
-Ukraine,4.8750,3984,No
-United Arab Emirates,6.5610,35171,No
-United Kingdom,7.0640,46344,No
-United States,6.9510,68309,No
-Uruguay,6.4310,15653,No
-Uzbekistan,6.1790,1775,No
-Venezuela,4.8920,1542,No
-Vietnam,5.4110,3759,No
-Yemen,3.6580,754,No
-Zambia,4.0730,974,No
-Zimbabwe,3.1450,1684,No
+Burundi,3.7750,265,LIC
+Mozambique,4.7940,425,LIC
+Malawi,3.6000,432,LIC
+Madagascar,4.2080,521,LIC
+Sierra Leone,3.8490,542,LIC
+Republic of the Congo,5.3420,588,LIC
+Afghanistan,2.5230,592,LIC
+Niger,5.0740,633,LIC
+Liberia,4.6250,700,LIC
+Chad,4.3550,741,LIC
+Yemen,3.6580,754,LIC
+Tajikistan,5.4660,810,LIC
+Rwanda,3.4150,821,LIC
+Gambia,5.0510,834,LIC
+Burkina Faso,4.8340,876,LIC
+Ethiopia,4.2750,952,LIC
+Uganda,4.6360,972,LIC
+Zambia,4.0730,974,LIC
+Mali,4.7230,983,LIC
+Togo,4.1070,1016,LIC
+Tanzania,3.6230,1104,MIC
+Kyrgyzstan,5.7440,1123,MIC
+Guinea,4.9840,1141,MIC
+Lesotho,3.5120,1178,MIC
+Nepal,5.2690,1236,MIC
+Pakistan,4.9340,1260,MIC
+Benin,5.0450,1388,MIC
+Comoros,4.2890,1420,MIC
+Myanmar,4.4260,1432,MIC
+Venezuela,4.8920,1542,MIC
+Senegal,5.1320,1622,MIC
+Cameroon,5.1420,1649,MIC
+Zimbabwe,3.1450,1684,MIC
+Cambodia,4.8300,1720,MIC
+Uzbekistan,6.1790,1775,MIC
+Nicaragua,5.9720,1877,MIC
+Haiti,3.6150,1943,MIC
+Kenya,4.6070,2129,MIC
+Bangladesh,5.0250,2138,MIC
+Mauritania,4.2270,2179,MIC
+India,3.8190,2191,MIC
+Ghana,5.0880,2374,MIC
+Nigeria,4.7590,2432,MIC
+Ivory Coast,5.3060,2567,MIC
+Honduras,5.9190,2586,MIC
+Laos,5.0300,2773,MIC
+Lebanon,4.5840,2802,MIC
+Algeria,4.8870,3364,MIC
+Morocco,4.9180,3415,MIC
+Libya,5.4100,3617,MIC
+Bolivia,5.7160,3624,MIC
+Philippines,5.8800,3646,MIC
+Tunisia,4.5960,3683,MIC
+Eswatini,4.3080,3710,MIC
+Vietnam,5.4110,3759,MIC
+Sri Lanka,4.3250,3830,MIC
+Egypt,4.2830,3832,MIC
+Ukraine,4.8750,3984,MIC
+El Salvador,6.0610,4031,MIC
+Armenia,5.2830,4125,MIC
+Mongolia,5.6770,4172,MIC
+Indonesia,5.3450,4256,MIC
+Jordan,4.3950,4358,MIC
+Georgia,4.8910,4361,MIC
+Namibia,4.5740,4371,MIC
+Guatemala,6.4350,4439,MIC
+Iraq,4.8540,4632,MIC
+Moldova,5.7660,4638,MIC
+Azerbaijan,5.1710,4883,MIC
+Paraguay,5.6530,5146,MIC
+Jamaica,6.3090,5328,MIC
+South Africa,4.9560,5444,MIC
+Ecuador,5.7640,5665,MIC
+Colombia,6.0120,5753,MIC
+Albania,5.1170,5991,MIC
+Belarus,5.5340,6487,MIC
+North Macedonia,5.1010,6657,MIC
+Peru,5.8400,6678,MIC
+Bosnia and Herzegovina,5.8130,6728,MIC
+Brazil,6.3300,7011,MIC
+Thailand,5.9850,7702,MIC
+Botswana,3.4670,7817,MIC
+Dominican Republic,5.5450,7951,MIC
+Iran,4.7210,8215,MIC
+Gabon,4.8520,8601,MIC
+Serbia,6.0780,8748,MIC
+Turkmenistan,5.0660,9032,MIC
+Montenegro,5.5810,9064,MIC
+Argentina,5.9290,9122,MIC
+Mexico,6.3170,9246,MIC
+Turkey,4.9480,9327,MIC
+Mauritius,6.0490,9639,MIC
+Kazakhstan,6.1520,9828,MIC
+Bulgaria,5.2660,11321,MIC
+Malaysia,5.3840,11604,MIC
+Russia,5.4770,11654,MIC
+Maldives,5.1980,11801,MIC
+Costa Rica,7.0690,11806,MIC
+China,5.3390,11819,MIC
+Panama,6.1800,13690,HIC
+Romania,6.1400,14968,HIC
+Chile,6.1720,15617,HIC
+Uruguay,6.4310,15653,HIC
+Croatia,5.8820,16247,HIC
+Poland,6.1660,16930,HIC
+Hungary,5.9920,18075,HIC
+Greece,5.7230,19673,HIC
+Latvia,6.0320,19824,HIC
+Slovakia,6.3310,21529,HIC
+Lithuania,6.2550,22245,HIC
+Saudi Arabia,6.4940,22700,HIC
+Bahrain,6.6470,24294,HIC
+Portugal,5.9290,25065,HIC
+Kuwait,6.1060,25290,HIC
+Czech Republic,6.9650,25732,HIC
+Estonia,6.1890,27101,HIC
+Slovenia,6.4610,28104,HIC
+Cyprus,6.2230,29551,HIC
+Spain,6.4910,30996,HIC
+Malta,6.6020,31576,HIC
+Taiwan,6.5840,32123,HIC
+South Korea,5.8450,34866,HIC
+Italy,6.4830,34997,HIC
+United Arab Emirates,6.5610,35171,HIC
+Japan,5.9400,42928,HIC
+France,6.6900,44995,HIC
+United Kingdom,7.0640,46344,HIC
+New Zealand,7.2770,47499,HIC
+Israel,7.1570,47602,HIC
+Hong Kong,5.4770,49036,HIC
+Canada,7.1030,49222,HIC
+Belgium,6.8340,50103,HIC
+Germany,7.1550,51860,HIC
+Austria,7.2680,53859,HIC
+Finland,7.8420,54330,HIC
+Netherlands,7.4640,58003,HIC
+Sweden,7.3630,58977,HIC
+Australia,7.1830,62723,HIC
+Singapore,6.3770,64103,HIC
+Iceland,7.5540,65273,HIC
+Denmark,7.6200,67218,HIC
+United States,6.9510,68309,HIC
+Norway,7.3920,81995,HIC
+Ireland,7.0850,94556,HIC
+Switzerland,7.5710,94696,HIC
+Luxembourg,7.3240,131782,HIC
