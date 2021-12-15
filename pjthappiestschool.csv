@@ -1,0 +1,135 @@
+country,happiness2021,school primary,continent
+Zimbabwe,3.1450,94.14912,Africa
+Rwanda,3.4150,94.78978,Africa
+Botswana,3.4670,87.65678,Africa
+Lesotho,3.5120,93.31062,Africa
+Malawi,3.6000,97.6489,Africa
+Tanzania,3.6230,81.32921,Africa
+Yemen,3.6580,84.16556,
+Burundi,3.7750,92.8047,Africa
+India,3.8190,92.25734,
+Sierra Leone,3.8490,98.11179,Africa
+Zambia,4.0730,83.16745,Africa
+Togo,4.1070,90.73097,Africa
+Madagascar,4.2080,95.60378,Africa
+Mauritania,4.2270,79.5744,Africa
+Ethiopia,4.2750,84.62346,Africa
+Egypt,4.2830,97.03257,Africa
+Comoros,4.2890,80.75383,Africa
+Eswatini,4.3080,82.52357,Africa
+Sri Lanka,4.3250,99.10711,
+Chad,4.3550,73.15289,Africa
+Jordan,4.3950,80.8644,
+Myanmar,4.4260,97.93192,
+Namibia,4.5740,97.48892,Africa
+Tunisia,4.5960,97.80391,Africa
+Kenya,4.6070,79.96782,Africa
+Liberia,4.6250,44.25563,Africa
+Uganda,4.6360,95.49324,Africa
+Iran,4.7210,99.70291,Asia
+Mali,4.7230,58.94142,Africa
+Nigeria,4.7590,64.13783,Africa
+Mozambique,4.7940,93.92934,Africa
+Cambodia,4.8300,90.26554,Asia
+Burkina Faso,4.8340,78.64517,Africa
+Ukraine,4.8750,91.66472,Europe
+Algeria,4.8870,97.63517,Africa
+Georgia,4.8910,96.43624,Asia
+Venezuela,4.8920,87.39174,America
+Morocco,4.9180,99.09904,Africa
+Pakistan,4.9340,67.5748,Asia
+Turkey,4.9480,87.90006,Asia
+South Africa,4.9560,87.01258,Africa
+Guinea,4.9840,76.01588,Africa
+Bangladesh,5.0250,90.53203,Africa
+Laos,5.0300,91.46712,Asia
+Benin,5.0450,97.21103,Africa
+Gambia,5.0510,76.81635,Africa
+Niger,5.0740,65.12458,Africa
+Ghana,5.0880,86.15823,Africa
+North Macedonia,5.1010,94.8883,Europe
+Albania,5.1170,94.52966,Europe
+Senegal,5.1320,75.3821,Africa
+Cameroon,5.1420,92.87395,Africa
+Azerbaijan,5.1710,92.42467,Asia
+Maldives,5.1980,95.4151,Asia
+Bulgaria,5.2660,86.4454,Europe
+Nepal,5.2690,96.2984,Asia
+Armenia,5.2830,90.72273,Asia
+Ivory Coast,5.3060,90.32837,Africa
+Republic of the Congo,5.3420,87.88284,Africa
+Indonesia,5.3450,93.4963,Asia
+Malaysia,5.3840,99.64564,Asia
+Vietnam,5.4110,97.96511,Asia
+Tajikistan,5.4660,98.28703,Asia
+Hong Kong,5.4770,95.45476,Asia
+Russia,5.4770,95.09612,Asia
+Belarus,5.5340,94.92861,Europe
+Dominican Republic,5.5450,92.71356,America
+Montenegro,5.5810,96.54847,Europe
+Paraguay,5.6530,87.19751,America
+Mongolia,5.6770,97.69756,Asia
+Bolivia,5.7160,92.85137,America
+Greece,5.7230,98.22037,Europe
+Kyrgyzstan,5.7440,89.85774,Asia
+Moldova,5.7660,86.31417,Europe
+Peru,5.8400,95.65167,America
+South Korea,5.8450,97.25516,Asia
+Philippines,5.8800,93.7756,Asia
+Croatia,5.8820,88.0407,Europe
+Honduras,5.9190,80.09489,America
+Argentina,5.9290,99.184,America
+Portugal,5.9290,97.56411,Europe
+Nicaragua,5.9720,94.89265,America
+Thailand,5.9850,98.08255,Asia
+Hungary,5.9920,90.83399,Europe
+Colombia,6.0120,92.91999,America
+Latvia,6.0320,96.30354,Europe
+Mauritius,6.0490,94.80512,Africa
+El Salvador,6.0610,80.99537,America
+Serbia,6.0780,94.55098,Europe
+Kuwait,6.1060,82.63321,Asia
+Romania,6.1400,82.22835,Europe
+Kazakhstan,6.1520,86.85584,Asia
+Poland,6.1660,95.78475,Europe
+Chile,6.1720,94.74067,America
+Uzbekistan,6.1790,94.59704,Asia
+Panama,6.1800,86.23979,America
+Estonia,6.1890,93.68129,Europe
+Cyprus,6.2230,97.49342,Europe
+Lithuania,6.2550,98.17529,Europe
+Jamaica,6.3090,81.0188,America
+Mexico,6.3170,95.30064,America
+Brazil,6.3300,96.29925,America
+Slovakia,6.3310,83.09318,Europe
+Singapore,6.3770,99.66959,Asia
+Uruguay,6.4310,99.3775,America
+Guatemala,6.4350,86.88631,America
+Slovenia,6.4610,98.26288,Europe
+Italy,6.4830,95.65574,Europe
+Spain,6.4910,97.27171,Europe
+Saudi Arabia,6.4940,94.5456,Asia
+United Arab Emirates,6.5610,95.02753,Asia
+Malta,6.6020,99.53764,Europe
+Bahrain,6.6470,96.71489,Asia
+France,6.6900,98.92727,Europe
+Belgium,6.8340,98.76482,Europe
+United States,6.9510,94.62633,America
+Czech Republic,6.9650,89.3503,Europe
+United Kingdom,7.0640,99.49182,Europe
+Costa Rica,7.0690,97.33255,America
+Ireland,7.0850,95.78041,Europe
+Canada,7.1030,99.8825,America
+Germany,7.1550,90.14286,Europe
+Israel,7.1570,97.01884,Asia
+Australia,7.1830,96.38096,Oceania
+Austria,7.2680,88.61718,Europe
+New Zealand,7.2770,99.11677,Oceania
+Luxembourg,7.3240,95.03083,Europe
+Sweden,7.3630,99.18177,Europe
+Norway,7.3920,99.88251,Europe
+Netherlands,7.4640,98.64765,Europe
+Iceland,7.5540,99.83367,Europe
+Switzerland,7.5710,93.19583,Europe
+Denmark,7.6200,98.53748,Europe
+Finland,7.8420,98.62944,Europe
