@@ -1,146 +1,146 @@
-Country Name,life expectancy2020,happiness2021
-Afghanistan,64.833,2.5230
-Albania,78.573,5.1170
-Algeria,76.88,4.8870
-Argentina,76.667,5.9290
-Armenia,75.087,5.2830
-Australia,82.9,7.1830
-Austria,81.7926829268293,7.2680
-Azerbaijan,73.005,5.1710
-Bahrain,77.292,6.6470
-Bangladesh,72.591,5.0250
-Belarus,74.2268292682927,5.5340
-Belgium,81.7463414634146,6.8340
-Benin,61.771,5.0450
-Bolivia,71.513,5.7160
-Bosnia and Herzegovina,77.401,5.8130
-Botswana,69.592,3.4670
-Brazil,75.881,6.3300
-Bulgaria,74.9146341463415,5.2660
-Burkina Faso,61.577,4.8340
-Burundi,61.584,3.7750
-Cambodia,69.823,4.8300
-Cameroon,59.292,5.1420
-Canada,82.0487804878049,7.1030
-Chad,54.239,4.3550
-Chile,80.181,6.1720
-China,76.912,5.3390
-Colombia,77.287,6.0120
-Comoros,64.321,4.2890
-Costa Rica,80.279,7.0690
-Croatia,78.4243902439025,5.8820
-Cyprus,80.982,6.2230
-Czech Republic,79.1292682926829,6.9650
-Denmark,81.2024390243903,7.6200
-Dominican Republic,74.081,5.5450
-Ecuador,77.01,5.7640
-Egypt,71.99,4.2830
-El Salvador,73.317,6.0610
-Estonia,78.4975609756098,6.1890
-Eswatini,60.194,4.3080
-Ethiopia,66.597,4.2750
-Finland,81.7853658536586,7.8420
-France,82.5780487804878,6.6900
-Gabon,66.467,4.8520
-Gambia,62.05,5.0510
-Georgia,73.767,4.8910
-Germany,80.9414634146342,7.1550
-Ghana,64.074,5.0880
-Greece,81.9390243902439,5.7230
-Guatemala,74.302,6.4350
-Guinea,61.602,4.9840
-Haiti,64.001,3.6150
-Honduras,75.27,5.9190
-Hong Kong,85.0780487804878,5.4770
-Hungary,76.0219512195122,5.9920
-Iceland,82.5609756097561,7.5540
-India,69.656,3.8190
-Indonesia,71.716,5.3450
-Iran,76.677,4.7210
-Iraq,70.604,4.8540
-Ireland,82.3024390243903,7.0850
-Israel,82.8048780487805,7.1570
-Italy,83.1975609756098,6.4830
-Ivory Coast,57.783,5.3060
-Jamaica,74.475,6.3090
-Japan,84.3563414634146,5.9400
-Jordan,74.526,4.3950
-Kazakhstan,73.18,6.1520
-Kenya,66.699,4.6070
-Kuwait,75.489,6.1060
-Kyrgyzstan,71.6,5.7440
-Laos,67.923,5.0300
-Latvia,75.2390243902439,6.0320
-Lebanon,78.93,4.5840
-Lesotho,54.331,3.5120
-Liberia,64.104,4.6250
-Libya,72.913,5.4100
-Lithuania,76.1341463414634,6.2550
-Luxembourg,82.4463414634146,7.3240
-Madagascar,67.041,4.2080
-Malawi,64.263,3.6000
-Malaysia,76.156,5.3840
-Maldives,78.921,5.1980
-Mali,59.306,4.7230
-Malta,82.6,6.6020
-Mauritania,64.925,4.2270
-Mauritius,74.2358536585366,6.0490
-Mexico,75.054,6.3170
-Moldova,71.901,5.7660
-Mongolia,69.87,5.6770
-Montenegro,76.884,5.5810
-Morocco,76.68,4.9180
-Mozambique,60.854,4.7940
-Myanmar,67.134,4.4260
-Namibia,63.708,4.5740
-Nepal,70.778,5.2690
-Netherlands,82.0121951219512,7.4640
-New Zealand,81.7073170731707,7.2770
-Nicaragua,74.485,5.9720
-Niger,62.42,5.0740
-Nigeria,54.687,4.7590
-North Macedonia,75.797,5.1010
-Norway,82.9073170731707,7.3920
-Pakistan,67.273,4.9340
-Panama,78.506,6.1800
-Paraguay,74.254,5.6530
-Peru,76.736,5.8400
-Philippines,71.231,5.8800
-Poland,77.8560975609756,6.1660
-Portugal,80.6829268292683,5.9290
-Republic of the Congo,64.57,5.3420
-Romania,75.4585365853659,6.1400
-Russia,73.0839024390244,5.4770
-Rwanda,69.024,3.4150
-Saudi Arabia,75.133,6.4940
-Senegal,67.941,5.1320
-Serbia,75.6853658536585,6.0780
-Sierra Leone,54.696,3.8490
-Singapore,83.4975609756098,6.3770
-Slovakia,77.4707317073171,6.3310
-Slovenia,81.280487804878,6.4610
-South Africa,64.131,4.9560
-South Korea,83.2268292682927,5.8450
-Spain,83.4853658536585,6.4910
-Sri Lanka,76.978,4.3250
-Sweden,82.9585365853659,7.3630
-Switzerland,83.7048780487805,7.5710
-Tajikistan,71.097,5.4660
-Tanzania,65.456,3.6230
-Thailand,77.15,5.9850
-Togo,61.042,4.1070
-Tunisia,76.699,4.5960
-Turkey,77.691,4.9480
-Turkmenistan,68.191,5.0660
-Uganda,63.368,4.6360
-Ukraine,71.8273170731707,4.8750
-United Arab Emirates,77.972,6.5610
-United Kingdom,81.2048780487805,7.0640
-United States,78.7878048780488,6.9510
-Uruguay,77.911,6.4310
-Uzbekistan,71.725,6.1790
-Venezuela,72.064,4.8920
-Vietnam,75.4,5.4110
-Yemen,66.125,3.6580
-Zambia,63.886,4.0730
-Zimbabwe,61.49,3.1450
+Country Name,life expectancy2020,happiness2021,Continent
+Afghanistan,64.833,2.5230,Asia
+Albania,78.573,5.1170,Europe
+Algeria,76.88,4.8870,Africa
+Argentina,76.667,5.9290,America
+Armenia,75.087,5.2830,Asia
+Australia,82.9,7.1830,Oceania
+Austria,81.7926829268293,7.2680,Europe
+Azerbaijan,73.005,5.,Asia
+Bahrain,77.292,6.6470,Asia
+Bangladesh,72.591,5.0250,Asia
+Belarus,74.2268292682927,5.5340,Europe
+Belgium,81.7463414634146,6.8340,Europe
+Benin,61.771,5.0450,Africa
+Bolivia,71.513,5.7160,America
+Bosnia and Herzegovina,77.401,5.8130,Europe
+Botswana,69.592,3.4670,Africa
+Brazil,75.881,6.3300,America
+Bulgaria,74.9146341463415,5.2660,Europe
+Burkina Faso,61.577,4.8340,Africa
+Burundi,61.584,3.7750,Africa
+Cambodia,69.823,4.8300,Asia
+Cameroon,59.292,5.1420,Africa
+Canada,82.0487804878049,7.1030,America
+Chad,54.239,4.3550,Africa
+Chile,80.181,6.1720,America
+China,76.912,5.3390,Asia
+Colombia,77.287,6.0120,America
+Comoros,64.321,4.2890,Africa
+Costa Rica,80.279,7.0690,America
+Croatia,78.4243902439025,5.8820,Europe
+Cyprus,80.982,6.2230,Europe
+Czech Republic,79.1292682926829,6.9650,Europe
+Denmark,81.2024390243903,7.6200,Europe
+Dominican Republic,74.081,5.5450,America
+Ecuador,77.01,5.7640,America
+Egypt,71.99,4.2830,Africa
+El Salvador,73.317,6.0610,America
+Estonia,78.4975609756098,6.1890,Europe
+Eswatini,60.194,4.3080,Africa
+Ethiopia,66.597,4.2750,Africa
+Finland,81.7853658536586,7.8420,Europe
+France,82.5780487804878,6.6900,Europe
+Gabon,66.467,4.8520,Africa
+Gambia,62.05,5.0510,Africa
+Georgia,73.767,4.8910,Asia
+Germany,80.9414634146342,7.1550,Europe
+Ghana,64.074,5.0880,Africa
+Greece,81.9390243902439,5.7230,Europe
+Guatemala,74.302,6.4350,America
+Guinea,61.602,4.9840,Africa
+Haiti,64.001,3.6150,America
+Honduras,75.27,5.9190,America
+Hong Kong,85.0780487804878,5.4770,Asia
+Hungary,76.0219512195122,5.9920,Europe
+Iceland,82.5609756097561,7.5540,Europe
+India,69.656,3.8190,Asia
+Indonesia,71.716,5.3450,Asia
+Iran,76.677,4.7210,Asia
+Iraq,70.604,4.8540,Asia
+Ireland,82.3024390243903,7.0850,Europe
+Israel,82.8048780487805,7.1570,Asia
+Italy,83.1975609756098,6.4830,Europe
+Ivory Coast,57.783,5.3060,Africa
+Jamaica,74.475,6.3090,America
+Japan,84.3563414634146,5.9400,Asia
+Jordan,74.526,4.3950,Asia
+Kazakhstan,73.18,6.1520,Asia
+Kenya,66.699,4.6070,Africa
+Kuwait,75.489,6.1060,Asia
+Kyrgyzstan,71.6,5.7440,Asia
+Laos,67.923,5.0300,Asia
+Latvia,75.2390243902439,6.0320,Europe
+Lebanon,78.93,4.5840,Asia
+Lesotho,54.331,3.5120,Africa
+Liberia,64.104,4.6250,Africa
+Libya,72.913,5.4100,Africa
+Lithuania,76.1341463414634,6.2550,Europe
+Luxembourg,82.4463414634146,7.3240,Europe
+Madagascar,67.041,4.2080,Africa
+Malawi,64.263,3.6000,Africa
+Malaysia,76.156,5.3840,Asia
+Maldives,78.921,5.1980,Asia
+Mali,59.306,4.7230,Africa
+Malta,82.6,6.6020,Europe
+Mauritania,64.925,4.2270,Africa
+Mauritius,74.2358536585366,6.0490,Africa
+Mexico,75.054,6.3170,America
+Moldova,71.901,5.7660,Europe
+Mongolia,69.87,5.6770,Asia
+Montenegro,76.884,5.5810,Europe
+Morocco,76.68,4.9180,Africa
+Mozambique,60.854,4.7940,Africa
+Myanmar,67.134,4.4260,Asia
+Namibia,63.708,4.5740,Africa
+Nepal,70.778,5.2690,Asia
+Netherlands,82.0121951219512,7.4640,Europe
+New Zealand,81.7073170731707,7.2770,Oceania
+Nicaragua,74.485,5.9720,America
+Niger,62.42,5.0740,Africa
+Nigeria,54.687,4.7590,Africa
+North Macedonia,75.797,5.1010,Europe
+Norway,82.9073170731707,7.3920,Europe
+Pakistan,67.273,4.9340,Asia
+Panama,78.506,6.1800,America
+Paraguay,74.254,5.6530,America
+Peru,76.736,5.8400,America
+Philippines,71.231,5.8800,Asia
+Poland,77.8560975609756,6.1660,Europe
+Portugal,80.6829268292683,5.9290,Europe
+Republic of the Congo,64.57,5.3420,Africa
+Romania,75.4585365853659,6.1400,Europe
+Russia,73.0839024390244,5.4770,Asia
+Rwanda,69.024,3.4150,Africa
+Saudi Arabia,75.133,6.4940,Asia
+Senegal,67.941,5.1320,Africa
+Serbia,75.6853658536585,6.0780,Europe
+Sierra Leone,54.696,3.8490,Africa
+Singapore,83.4975609756098,6.3770,Asia
+Slovakia,77.4707317073171,6.3310,Europe
+Slovenia,81.280487804878,6.4610,Europe
+South Africa,64.131,4.9560,Africa
+South Korea,83.2268292682927,5.8450,Asia
+Spain,83.4853658536585,6.4910,Europe
+Sri Lanka,76.978,4.3250,Asia
+Sweden,82.9585365853659,7.3630,Europe
+Switzerland,83.7048780487805,7.5710,Europe
+Tajikistan,71.097,5.4660,Asia
+Tanzania,65.456,3.6230,Africa
+Thailand,77.15,5.9850,Asia
+Togo,61.042,4.1070,Africa
+Tunisia,76.699,4.5960,Africa
+Turkey,77.691,4.9480,Asia
+Turkmenistan,68.191,5.0660,Asia
+Uganda,63.368,4.6360,Africa
+Ukraine,71.8273170731707,4.8750,Europe
+United Arab Emirates,77.972,6.5610,Asia
+United Kingdom,81.2048780487805,7.0640,Europe
+United States,78.7878048780488,6.9510,America
+Uruguay,77.911,6.4310,America
+Uzbekistan,71.725,6.1790,Asia
+Venezuela,72.064,4.8920,America
+Vietnam,75.4,5.4110,Asia
+Yemen,66.125,3.6580,Asia
+Zambia,63.886,4.0730,Africa
+Zimbabwe,61.49,3.1450,Africa
