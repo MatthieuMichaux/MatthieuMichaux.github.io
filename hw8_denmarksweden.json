@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       "description": "GDP per capita",
+           "title": {
+          "text": "Gross Domestic Product",
+          "subtitle":"Millions of Euros (Source:FRED)",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/hw8_denmarksweden.csv"},
+  
+    "height":220,
+    "width":220,
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal","title":"Date"},
+      "y": {"field": "GDP", "type": "quantitative","title":"",
+          "scale":{"domain":[25000,140000]}},
+      "color": {"field": "symbol", "type": "nominal","title":"Countries:"}
+    }
+  }
+  
