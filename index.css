@@ -1,85 +1,59 @@
-/* This is my first proper css file */
+
+
+/* CSS works on different screen sizes*/
+/* Colours based on the Financial Times*/
+/*This CSS is for the homepage=index.html*/
 
 body{
-    background-color: beige;
+    background-color:#fff1e0 ;
     margin: auto;
     max-width: fit-content;
-}
-h1{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    overflow: hidden; /*Means you can't scroll down*/
 }
 
-h2{
-    color:rgb(0, 0, 88) ;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 150;
+h1{ 
+    /* WEBSITE TITLE*/
+    color:rgb(17, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:220%;
+    
 }
 
 h3{
     color:rgb(0, 0, 88);
     font-family:Arial, Helvetica, sans-serif;
-}
-
-p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
-}
-
-.chart{
-    background-color: white;
-    width:330px;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 12px;
-    border-color: white;
-    margin: center;
-}
-
-.chartbox{
-    border:rgb(247, 247, 197);
-    width: 400px;
-    margin: 15px;
-    background-color: rgb(247, 247, 197);
-    padding: 15px;
-    border: 1px solid rgb(109, 114, 88);
-    border-radius: 12px;   
-    box-sizing: border-box;
-}
+    text-align: center;
     
-.button:link, .button:visited {
-    background-color: transparent;
-    border-radius: 12px;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: left;
+}
+
+a:link, a:visited {
+    /*To do with the text inside */
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    text-align: center;
+    float: center;
+    /*To do with the box link */
+    border-radius: 6px;
+    border: 3px solid black;
+    padding: 15px 20px;
+    width: 100px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right:auto;
+    /*To make it look good*/
     text-decoration: none;
     transition-duration: 0.4s;
-    float: center;
-    margin: 2px;   
-    
-    
-}
-  
-  .button:hover, .button:active {
-    background-color: green;
-    color: white;
-}
-
-.footer {
-    background-color: grey;
-    color:white;
-    text-align: right;
-    border-top: 1px solid black;
-}
-
-.grid-container{
-    display:inline-grid;
-    grid-template-columns: auto auto;  
-}
-
-.grid-item{
+    display: block;
     background-color: transparent;
+    
+}
+
+a:hover, a:active {
+    background-color: black;
+    color: white;
+    font-size:110%;
 }
 
