@@ -19,7 +19,7 @@
     },
   
     "transform": [
-      {"filter":{"field":"away_team.name", "oneOf": ["Olympique Marseille", "SCO Angers", "Paris Saint-Germain", "OGC Nice", "RC Lens", "Olympique Lyonnais"]}}
+      {"filter":{"field":"away_team.name", "oneOf": ["Olympique Marseille", "SCO Angers", "Paris Saint-Germain", "FC Stade Rennes"]}}
     ],
   
     "mark": {
@@ -27,7 +27,7 @@
       "color":"rgb(0,67,167)"},
   
     "height":100,
-    "width":150,
+    "width":120,
     "padding":{
       "top":0,
       "bottom":0,
