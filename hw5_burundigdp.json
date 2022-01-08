@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "GDP Burundi",
+
+   "title": {
+    "text": "Gross Domestic Product for Burundi",
+    "subtitle":"Current U.S. Dollars (FRED: MKTGDPBIA646NWDB)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/data_fred-MKTGDPPBIA646NWDB.json",
+    "format": {
+        "type": "json", 
+        "property": "observations"}
+  },
+  
+  "height": 250,
+  "width": 250,
+  
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "monotone",
+    "color": "blue"
+  },
+  
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "Date",
+        "grid": false,
+        "labelSeparation": 10,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}
