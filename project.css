@@ -1,0 +1,237 @@
+
+
+/*THIS IS THE CSS FOR THE PROJECT (mostly based of portfolio2.css)*/
+
+/*COLOUR based on the FINANCIAL TIMES*/
+
+/* Everything with a screen width inferior to 840px will take this form*/
+/*MOBILE FRIENDLY*/
+@media only screen and (max-width: 840px) {
+
+    body{
+        background-color:#fff1e0 ;
+        margin: auto;
+        max-width: fit-content;
+        padding-top: 30px;
+        padding-left:10px;
+        padding-right:10px;
+        padding-bottom: 30px;
+    }
+        
+    h1{
+        /*Website title*/
+        color:rgb(17, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size:220%;
+    }
+    
+    h2{
+        /*Page title*/
+        color:rgb(0, 0, 88) ;
+        font-family: 'Roboto', sans-serif;
+        font-size: 150;
+    }
+    
+    h3{
+        /*Graph title*/
+        color:rgb(0, 0, 88);
+        font-family:Arial, Helvetica, sans-serif;       
+    }
+    
+    h4{
+        /*Chartbox title*/
+        color:rgb(0, 0, 88);
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size: 125%;      
+    }
+    
+    p{
+        /*Normal text*/
+        color:rgb(17, 17, 17);
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        flex: center;
+        margin-bottom: 10px;
+    }
+    
+    .button {
+        /*To do with the text inside */
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        color:black;
+        text-align: center;
+        /*To do with the box link */
+        border-radius: 16px;
+        border: 2px solid black;
+        padding: 10px 10px;
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;  
+        /*To make it look good*/
+        text-decoration: none;
+        transition-duration: 0.4s;
+        display: inline-block;
+        background-color: transparent;    
+    }
+    
+    a:hover, a:active {
+        background-color: black;
+        color: white;
+    }
+    
+    .chart{
+        /*Chart background*/
+        background-color: #fff1e0;
+        width:fit-content;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 12px;
+        border-color: #f2dfce;
+        margin: center;
+        margin-bottom: 25px;
+    }
+    
+    .chartbox{
+        /*Week work*/
+        width: 380px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+        background-color: #fff1e0;
+        padding: 10px;
+        border: transparent;
+        border-radius: 12px;   
+        box-sizing: border-box, fit-content;
+    }
+    }
+    
+    /* Everything with a screen width superior to 840px will take this form*/
+    /*COMPUTER/TABLET FRIENDLY*/
+    /*Comments only on new stuff*/
+    @media only screen and (min-width: 840px) {
+    
+    /*New stuff*/    
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        width: 760px;
+    } 
+      
+    .grid-item {
+        background-color:transparent;
+        width: 360px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .item-alone{
+        /*Item gets in the middle of the graph*/
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
+    .special-text{
+        /*Centers tect*/
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    
+    /*Nothing has changed apart from the width of chartbox which is now set to 760px*/
+    body{
+        background-color: #fff1e0 ;
+        margin: auto;
+        max-width: fit-content;
+        padding-top: 30px;
+        padding-left:10px;
+        padding-right:10px;
+        padding-bottom: 30px;
+    }
+        
+    h1{
+        color:rgb(17, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size:220%;
+    }
+    
+    h2{
+        color:rgb(0, 0, 88) ;
+        font-family: 'Roboto', sans-serif;
+        font-size: 150;
+    }
+    
+    h3{
+        color:rgb(0, 0, 88);
+        font-family:Arial, Helvetica, sans-serif;       
+    }
+    
+    h4{
+        color:rgb(0, 0, 88);
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size: 125%;      
+    }
+    
+    p{
+        color:rgb(17, 17, 17);
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        flex: center;
+        margin-bottom: 10px;
+    }
+    
+    .button {
+        /*To do with the text inside */
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        color:black;
+        text-align: center;
+        /*To do with the box link */
+        border-radius: 16px;
+        border: 2px solid black;
+        padding: 10px 10px;
+        width:90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;  
+        /*To make it look good*/
+        text-decoration: none;
+        transition-duration: 0.4s;
+        display: inline-block;
+        background-color: transparent;    
+    }
+    
+    a:hover, a:active {
+        background-color: black;
+        color: white;
+    }
+    
+    .chart{
+        background-color: #fff1e0;
+        width:fit-content;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 12px;
+        border-color: #f2dfce;
+        margin: center;
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    
+    .chartbox{
+        width: 760px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+        background-color: #fff1e0;
+        padding: 10px;
+        border: transparent;
+        border-radius: 12px;   
+        box-sizing: border-box, fit-content;
+    }
+    }
+    
+ 
