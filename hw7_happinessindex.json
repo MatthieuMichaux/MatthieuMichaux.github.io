@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/happiness_chart.csv"},
+  "mark": "circle",
+
+   "title": {
+    "text": "Happinest countries 2021",
+    "subtitle":["Happiness index (scale 1 to 10)"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+   },
+
+   "height": 250,
+   "width": 280,
+
+  "encoding": {
+    "x": { "field": "0", "type": "nominal","title":"Country"},
+    "y": {"field": "1", "type":"quantitative","title":"", "scale": {"domain": [0, 10]}}
+}}
