@@ -1,0 +1,88 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       "description": "GNI per capita using World Bank data, data arranged in Excel",
+           "title": {
+          "text": "If income meant happiness",
+          "subtitle":["Source: World Bank","GNI per capita (US$)"],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_NEWgdpcapita.csv"},
+
+    "params": [{
+    "name": "Place",
+    "select": {"type": "point", "fields": ["income"]}
+  }],
+
+  "config": {
+    "background":"#fff1e0",
+    "view": {"stroke": "transparent"}},
+
+    "height": 250,
+    "width": 270,
+
+    "mark": {"type":"line"},
+
+
+    "encoding": {
+
+      "x": {
+        "field": "date",
+        "type": "temporal",
+         "title":"Date"
+        },
+     
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title":""
+        },
+
+      "color": {
+        
+        "field": "symbol",
+        "type": "nominal",
+        "title":"Countries:"
+          },
+    
+          
+     "tooltip":[{
+       "field": "symbol",
+       "type": "nominal",
+       "title": "Country"
+       },
+      {
+       "field": "date",
+       "type": "temporal", 
+       "title": "Date"
+       },
+      {
+       "field": "value",
+       "type": "quantitative",
+       "title": "GNI per capita"
+      }]
+    },
+
+    "transform":[{
+      "filter": {
+        "selection": "Place"}
+        }],
+
+    "selection": {
+      "Place": {
+        "type":"point",
+        "fields": ["income"],
+        "bind": {
+          "input": "select",
+          "options": [null, "LIC", "MIC", "HIC"],
+          "name":"Pick an income level"
+          
+              }
+ 
+            }
+          }
+}
+
+  
