@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github project</title>
+    <title>Project</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
     </style>
 
     <!--The next three lines allow the Vega embed-->
@@ -21,23 +23,152 @@
 
 </head>
 
-<body>
-    
-    <p>
-    <h1>Data science 2021.</h1>
-    
-     <a class="button" href="Portfolio.html">Portfolio</a>
-     <a class="button" href="index.html">Home</a>
-    </p>   
-        
-    <h2>Project </h2> 
-    
-   
-    
-    <p><br>Please remember <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">that...</a></p>
+<!--DESCRIPTION NEEDED FOR THE GRAPHS-->
 
+<body>
+ 
+  <p>
+    <h1>Data Science 2021.</h1>
+
+    <a class="button" href="index.html"><strong>HOME</strong></a>
+    <a class="button" href="Portfolio.html"><strong>PORTFOLIO</strong></a>
+<br>
+<br>
+    <h2>Project: Is money synonym of happiness?</h2>
+  </p>
+
+ <div class="chartbox">
+
+  <p>Many say that money can’t buy happiness. However, isn’t it true that individuals derive happiness from having money to spend? Aren’t individuals happy to provide for their cherished ones? The purpose of this project is to see if, contrary to popular saying, money and happiness are intertwined. </p>
+ 
+  <div class="grid-container">
+
+    <div class="grid-item">
+    <p><br>If money is synonym to happiness, this first graph showing gross national income per capita would suggest that Switzerland has the happiest citizens. Moreover, Swiss would be exponentially happier than Burundians and Ugandans that live on less than a thousand US dollars a year. Yet, if money means happiness, these 6 countries have grown happier as income per capita has risen everywhere in the last 50 years.</p>
+    </div>
+
+    <div class="grid-item">
+<div class="chart"> 
+<div class="chart101" id="hundrethoneChart">
+  <script>
+    var myChart101 = "pjt_graph1.json";
+    vegaEmbed('#hundrethoneChart', myChart101);
+  </script>
+</div> 
+</div>
+</div>
+</div>
+
+<p>However, in 2021 our happiest citizens were Finnish, Switzerland ranked third despite having income per capita levels close to double those in Finland. Similarly, Burundi which has the lowest income level on our panel is not the most unhappy country. </p>
+
+<div class="grid-container">
+<div class="grid-item">
   
+  <p><br>Even though there is a visual correlation between income levels as high-income countries tend to rank higher in happiness index. The overall shape suggests that close to the origin an increase in income levels seems to have a more important effect towards happiness than when income levels are high.</p>
+  <p>When looking within income level groups, the extent to which income level impact happiness seems more limited. Happiness has to be correlated with other variables from which individuals derive bliss.</p>
+</div> 
+
+ <div class="grid-item">
+  <div class="chart"> 
+  <div class="chart102" id="hundrethtwoChart">
+    <script>
+      var myChart102 = "pjt_happinessgdp.json";
+      vegaEmbed('#hundrethtwoChart', myChart102);
+    </script>
+  </div> 
+  </div>
+  </div>
+
+  <div class="grid-item">
+  
+    <p>People tend to agree that living a long life is a source of happiness. Many people want to have children, see them grow and eventually have grandchildren. Thus, countries with higher life expectancy would be expected to have happier population. </p>
+    </div>
+
+    <div class="grid-item"> 
+    <div class="chart"> 
+    <div class="chart103" id="hundreththreeChart">
+      <script>
+        var myChart103 = "pjt_hapinesslife.json";
+        vegaEmbed('#hundreththreeChart', myChart103);
+      </script>
+    </div> 
+    </div>
+    </div> 
+    </div>
+
+  <div class="grid-container">  
+  <div class="grid-item">
+  
+  <div class="chart"> 
+  <div class="chart104" id="hundrethfourChart">
+    <script>
+      var myChart104 = "pjt_ugandalife.json";
+      vegaEmbed('#hundrethfourChart', myChart104);
+    </script>
+  </div> 
+  </div>
+  </div>  
+
+<div class="grid-item">
+  <p>Uganda’s life expectancy at birth has increased by ten years between 2006 and 2018. Moreover, neonatal, infant and under 5 mortalities has been steadily decreasing in the same time period. Despite this happiness has not always been increasing, the apparent correlation observed on a global scale is less visible here. One explanation would be that the effects of increasing life expectancy are hard to observe on a day to day basis, the effects would be felt in the long-run. For example, the fall in happiness in 2013 was probably more impacted by the freedom of press breaches than the positive change in life expectancy. </p>
+</div>
+
+  <div class="grid-item">
+  
+    <p>China's GNI per capita has increased 46 times since the 1980s. At the same time, life expectancy has close to doubled. When income increases access to healthcare and medicine tends to follow, individuals tend to live longer. It's in high income countries that individuals live longest.</p>
+    <p>Interestingly, an exponential increase in income, isn’t followed by a similar trend for life expectancy. This concave Chinese trend can confirm why Switzerland and Finland have similar life expectancies despite different income levels and, similarly, why the differences between Russia and Uganda are so big.</p>
+  </div>
+
+    <div class="grid-item"> 
+    <div class="chart"> 
+    <div class="chart105" id="hundrethfiveChart">
+      <script>
+        var myChart105 = "pjt_chinalifegni.json";
+        vegaEmbed('#hundrethfiveChart', myChart105);
+      </script>
+    </div> 
+    </div>
+    </div>  
+
+  <div class="grid-item">
+  
+    <p>Again, the countries where individual freedom is highest score better. Yet China is a significant outlier as it has similar freedom levels than high-income countries, despite having a much lower happiness score. It could be that the effects of freedom are marginal compared to other variables towards happiness as shown in the world trend.</p>
+    </div>
     
+    <div class="grid-item">
+    <div class="chart"> 
+    <div class="chart106" id="hundrethsixChart">
+        <script>
+          var myChart106 = "pjt_happyfreedom6.json";
+          vegaEmbed('#hundrethsixChart', myChart106);
+        </script>
+    </div> 
+    </div>
+    </div>  
+
+    <div class="grid-item">
+  
+      <p>Even though having higher income means that your choices are less constrained by necessity, a correlation between the two variables is hard to spot. We would expect Finland to have freer citizen as they live in a developed democracy with extensive public help. However, the two variables seem to work in opposite direction.</p>
+      <p>On the other hand, in Russia where income levels are lower, freedom and income per capita do seem correlated. However, from these two countries it is hard to conclude whether there is a link between income levels and freedom.</p>
+     </div>   
+
+     <div class="grid-item">
+      <div class="chart"> 
+      <div class="chart107" id="hundrethsevenChart">
+        <script>
+          var myChart107 = "pjt_6GNIfreedom.json";
+          vegaEmbed('#hundrethsevenChart', myChart107);
+        </script>
+      </div> 
+      </div>
+      </div>  
+
+</div>
+
+<p>Does money lead to happiness? To a certain extent yes. High income countries tend to score higher than other countries on the Happiness Index. Nonetheless, above certain threshold income per capita levels are less strongly correlated with happiness. Life expectancy seems play a more important role, yet the extent to which life expectancy depends on GNI would have to be analysed.</p>
+<p>The data used are collected into csv files as it is easier to extract and use. Working with APIs has little impact as the data is retrieved on a yearly basis.</p>
+</div> 
+
 </body>
-    
 </html>
+
