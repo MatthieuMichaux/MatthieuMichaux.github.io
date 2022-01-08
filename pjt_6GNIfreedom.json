@@ -1,0 +1,214 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+     "description": "GNI and life expectancy",
+           "title": {
+          "text": "GNI and freedom",
+        "subtitle":["Source: World Bank",""],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+  
+    "data": {
+    "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_6GNIfreedom.csv"
+  },
+
+  "config": {
+    "background":"#fff1e0",
+    "view": {"stroke": "transparent"}},
+    
+  "vconcat": [
+
+       {
+      "layer": [
+        {
+        "title": {
+          "text": "Russia",
+          "anchor": "middle",
+          "color": "black"
+          },
+          "mark": {
+            "type": "line",
+            "color": "salmon"
+          },
+
+          "encoding": {
+            "x": {
+              "type": "temporal",
+              "field": "date",
+              "title":"Date"
+              },
+
+            "y": {
+              "type": "quantitative",             
+              "field": "GNI",
+              "axis": {
+                "grid": false,            
+                "tickColor":"salmon",
+                "domainColor":"salmon",
+                "domainWidth":1.5}
+            },
+          
+          "tooltip": [{
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "GNI",
+            "type": "quantitative",
+            "title": "GNI ($)"
+          }
+        ]
+              
+            }
+          },
+        {
+          "mark": {
+            "type": "line",
+            "point":true,
+             "color": "steelblue"
+             },
+
+          "encoding": {
+            "x": {
+              "type": "temporal",
+              "field": "date"
+              },
+
+             "y": {
+              "type": "quantitative",
+              "field": "freedom",
+              "title":"Freedom",
+               "scale":{"domain":[0.58,0.8]},
+               "axis": {
+                "grid": false,            
+                "tickColor":"steelblue",
+                "domainColor":"steelblue",
+                "domainWidth":1.5}
+            },
+          
+          "tooltip": [{
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+           "field": "freedom",
+            "type": "quantitative",
+            "title": "Freedom",
+            "format":".2f"
+          }
+        ]
+          }
+        }
+      ],
+
+     "resolve": {
+       "scale": {
+         "y":"independent", 
+         "x": "shared"}},
+
+       "transform": [{
+         "filter": "(datum.symbol === 'Russia')"}]},
+        
+       {
+      "layer": [
+        {
+           "title": {
+          "text": "Finland",
+          "anchor": "middle",
+          "color": "black"
+          },
+          "mark": {
+            "type": "line",
+            "color": "salmon"
+          },
+
+          "encoding": {
+            "x": {
+              "type": "temporal",
+              "field": "date",
+              "title":"Date"
+              },
+
+            "y": {
+              "type": "quantitative",             
+              "field": "GNI",
+               "scale":{"domain":[40000,52000]},
+              "axis": {
+                "grid": false,            
+                "tickColor":"salmon",
+                "domainColor":"salmon",
+                "domainWidth":1.5}
+            },
+          
+          "tooltip": [{
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "GNI",
+            "type": "quantitative",
+            "title": "GNI ($)"
+          }
+        ]
+              }
+            
+          },
+        {
+          "mark": {
+            "type": "line",
+            "point":true,
+             "color": "steelblue"
+             },
+
+          "encoding": {
+            "x": {
+              "type": "temporal",
+              "field": "date"
+              },
+
+ "y": {
+              "type": "quantitative",
+              "field": "freedom",
+              "title":"Freedom",
+               "scale":{"domain":[0.9,0.98]},
+               "axis": {
+                "grid": false,            
+                "tickColor":"steelblue",
+                "domainColor":"steelblue",
+                "domainWidth":1.5}
+            },
+          
+          "tooltip": [{
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "freedom",
+            "type": "quantitative",
+            "title": "Freedom",
+            "format":".2f"
+          }
+        ]
+            }
+          }
+        
+      ],
+
+     "resolve": {
+       "scale": {
+         "y":"independent", 
+         "x": "shared"}},
+
+       "transform": [{
+         "filter": "(datum.symbol === 'Finland')"}]}        
+
+  ]}
+    
+  
+  
