@@ -5,7 +5,7 @@
   
      "title": {
       "text": "Real Gross Domestic Product for the USA",
-      "subtitle":"Billions of Chained 2012 Dollars Seasonally Adjusted Annual Rate (FRED: GDPC1)",
+      "subtitle":"Billions of Chained 2012 Dollars (FRED: GDPC1)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -19,8 +19,8 @@
           "property": "observations"}
     },
     
-    "height": 300,
-    "width": 300,
+    "height": 250,
+    "width": 280,
     
     "mark": {
       "type": "line",
