@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       "description": "GDP per capita",
+           "title": {
+          "text": "Life expectancy and happiness",
+          "subtitle":["Source: World Bank, World Happiness Report","Happiness index"],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiestlife.csv"},
+
+    "params": [{
+    "name": "Place",
+    "select": {"type": "point", "fields": ["Continent"]}
+  }],
+
+  "config": {
+    "background":"#fff1e0",
+    "view": {"stroke": "transparent"}},
+
+    "height": 250,
+    "width": 270,
+
+    "mark": {"type":"point"},
+
+
+    "encoding": {
+
+      "x": {
+        "field": "life expectancy2020",
+        "type": "quantitative",
+         "scale":{"domain":[45,90]},
+        "title":"Life expectancy 2020"
+        },
+     
+      "y": {
+        "field": "happiness2021",
+        "type": "quantitative",
+        "scale":{"domain":[2,8]},
+        "title":""
+        },
+
+      "color": {
+        "legend": {"orient": "bottom"},
+        "field": "Continent",
+        "type": "nominal",
+        "title":""
+          },
+    
+          
+     "tooltip":[{
+       "field": "Country Name",
+       "type": "nominal",
+       "title": "Country"
+       },
+      {
+       "field": "happiness2021",
+       "type": "quantitative", 
+       "title": "Happiness index"
+       },
+      {
+       "field": "life expectancy2020",
+       "type": "quantitative",
+       "title": "Life expectancy",
+       "format": ".2f"
+      }]
+    },
+
+    "transform":[{
+      "filter": {
+        "selection": "Place"}
+        }],
+
+    "selection": {
+      "Place": {
+        "type":"point",
+        "fields": ["Continent"],
+        "bind": {
+          "input": "select",
+          "options": [null, "Africa", "Asia", "America", "Europe", "Oceania"],
+          "name":"Pick a continent"
+          
+              }
+ 
+            }
+          }
+}
+
+  
