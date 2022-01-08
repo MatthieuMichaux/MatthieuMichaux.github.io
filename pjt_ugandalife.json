@@ -1,0 +1,174 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     "description": "Uganda life expectancy",
+             "title": {
+            "text": "Uganda x life expectancy",
+          "subtitle":["Sources: WHO, World Happiness Report",""],
+            "subtitleFontStyle":"italic",
+            "subtitleFontSize":10,
+            "anchor": "start",
+            "color": "black"},
+  
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_ugandahealthdata.csv"},
+  
+  "width":270,
+  "height":250,
+  
+  "config": {"background": "#fff1e0", "view": {"stroke": "transparent"}},
+  
+    "encoding": {
+      "x": {
+        "field": "date",
+        "title": "Date",
+        "type": "temporal",
+        "timeUnit": "year" 
+      }},
+     
+    "layer": [
+           { "mark": {
+              "type": "line",
+              "color": "salmon"
+              },
+  
+            "encoding": {
+              "y": {
+                "type": "quantitative",
+                "title":"",
+                "field": "happiness",
+                "scale":{"domain":[3,5]},
+                "axis": {
+                  "grid": false,            
+                  "tickColor":"salmon",
+                  "domainColor":"salmon",
+                  "domainWidth":1.5}
+              }
+            
+            }
+          },
+  
+        {
+          "mark": {
+            "type": "line", 
+            "color": "steelblue"
+            },
+  
+          "encoding": {
+            "y": {
+                "type": "quantitative",
+                "field": "expectancy",
+                "title":"",
+                "scale":{"domain":[0,100]}
+              }}
+          },
+  
+        {
+          "mark": {
+            "type": "line",
+            "color": "red"
+            },
+  
+          "encoding": {
+              "y": {
+                "type": "quantitative",
+                "field": "neonatalmortality",
+                "title":"",
+                "scale":{"domain":[0,100]}
+              }}
+          },
+  
+        {
+          "mark": {
+            "type": "line",
+            "color": "green"
+            },
+  
+          "encoding": {
+              "y": {
+                "type": "quantitative",
+                "field": "infantmortality",
+                "title":"",
+                "scale":{"domain":[0,100]}
+              }}
+          },
+  
+        {
+          "mark": {
+            "type": "line", 
+            "color": "purple"
+            },
+          "encoding": {
+              "y": {
+                "type": "quantitative",
+                "field": "under5mortality",
+                "title":"",
+                "scale":{"domain":[0,100]}
+              }}
+          },
+  
+          {
+  
+        "mark": {"type": "rule", "color": "black"},
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 1, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "happiness",
+              "type": "quantitative",
+              "title":"Happiness",
+              "format":".2f"          
+            },
+            {
+              "field": "expectancy",
+              "type": "quantitative",
+              "title": "Life expectancy",
+              "format":".2f" 
+            },
+            {
+              "field": "under5mortality",
+              "type": "quantitative",
+              "title": "Under 5 mortality (1/1000)"
+            },
+            {
+              "field": "neonatalmortality",
+              "type": "quantitative",
+              "title": "Neonatal mortality (1/1000)"
+            },
+            {
+              "field": "infantmortality",
+              "type": "quantitative",
+              "title": "Infant mortality (1/1000)"
+            },
+            {
+              "field": "neonatalmortality",
+              "type": "quantitative",
+              "title": "Neonatal mortality (1/1000)"
+            }
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["date"],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ]
+      }
+        ],
+  
+        "resolve": {
+          "scale": {
+            "y": "independent"
+            }
+          
+      
+    }
+  }
+  
