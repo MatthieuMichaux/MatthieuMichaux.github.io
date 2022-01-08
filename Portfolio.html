@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github portfolio</title>
+    <title>Portfolio</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio2.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
     </style>
 
     <!--The next three lines allow the Vega embed-->
@@ -21,261 +22,382 @@
 
 </head>
 
-
-
 <body>
-
-    <p>
-    <h1>Data Science 2021.</h1>
-    
-   
-    
-    <a class="button" href="index.html">Home</a>
-    <a class="button" href="Project.html">Project</a>
-     <h2><br>My portfolio</h2>
-    </p>
+<!--Comments for the elements/classes to be found in the CSS file--> 
   
-      <p>This portfolio was realised as part of my Data Science module.<br> </p>
-    
-<p>Week 1 Homework</p>
-    
-<div class="grid-container">   
+  <h1>Data Science 2021.</h1>
+  
+      <a class="button" href="index.html"><strong>HOME</strong></a>
+      <a class="button" href="Project.html"><strong>PROJECT</strong></a>
+<br>
+<br>
+      <h2>My portfolio:</h2>
+
+<p>This portfolio was realised for my Data Science module at the University of Bristol</p>
+
+<!--Homework week 1: Embedding three charts-->
 <div class="chartbox">
     
-    <h3>Covid-19</h3>
+ <h4><ins>Week 1 homework:</ins></h4> 
+ <div class="grid-container">
+    <div class="grid-item">
 
-    <p>The first chart tracks <strong>Covid-19</strong> cases by UK region.</p>
-
-<!--Vaga embed, with notes for what is going on-->
-    <div class="chart" id="firstChart">
-
-  <script>
-    // Following the script tag we are using Javascript.
-    // One way to tell is to see how comments work...
-    // First job is to set the chart as a JS variable:
-    var myChart1 = "chart1_covidUKRegions.json";
-    // Now we simply insert it, using Vega's embed code:
-    // The embed function needs to be told the location, and what to put there. 
-    vegaEmbed('#firstChart', myChart1);
-  </script>
-
-    </div>     
-</div>
-
-   
+        <h3>Covid-19</h3>
   
-<div class="chartbox">    
-    
-    <h3>Productivity puzzle</h3>
+        <p>The first chart tracks Covid-19 cases by UK region.</p>
 
-    <p>My second chart looks at <strong>productivity</strong> in the UK</p>
+        <div class="chart">
+        <!--Vega embed, with notes for what is going on-->
+            <div class="chart" id="firstChart">
 
-<div class="chart2" id="secondChart">
-  <script>
-    var myChart2 = "chart2_ukProductivity.json";
-    vegaEmbed('#secondChart', myChart2);
-  </script>
+                <script>
+                // Following the script tag we are using Javascript.
+                // One way to tell is to see how comments work...
+                // First job is to set the chart as a JS variable:
+                var myChart1 = "chart1_covidUKRegions.json";
+                 // Now we simply insert it, using Vega's embed code:
+                // The embed function needs to be told the location, and what to put there. 
+                vegaEmbed('#firstChart', myChart1);
+                </script>
+            </div>
+        </div>
+    <!--Below end of grid item-->
     </div>
-</div>  
-    
-   
-    
-<div class="chartbox">  
-    
-    <h3>Ozone emissions</h3>
 
-  <p>My third chart looks at <strong>ozone emissions</strong></p>
+    <div class="grid-item">
+        <h3>Productivity puzzle</h3>
+  
+        <p>My second chart looks at productivity in the UK:</p>
 
+        <div class="chart">
+            <div class="chart2" id="secondChart">
+                <script>
+                var myChart2 = "chart2_ukProductivity.json";
+                vegaEmbed('#secondChart', myChart2);
+                </script>
+            </div>
+        </div>
+    </div>
+
+<div class="item-alone">
+<h3 class="special-text">Ozone</h3>
+  
+<p class="special-text">My third chart looks at ozone emissions:</p>
+
+<div class="chart">
 <div class="chart3" id="thirdChart">
-  <script>
-    var myChart3 = "chart4_ozoneemissionsAPI.json";
-    vegaEmbed('#thirdChart', myChart3);
-  </script>
-    </div>
-  </div>
- </div> 
-    
-<p>Week 2 Homework</p>
-
-<div class="grid-container"> 
-<div class="chartbox">   
-    
-<h3>New Daily Covid cases 1</h3>
-
-    <p>My fourth chart looks at new <strong>Covid-19</strong> cases (direct API link) </p>
-
-<div class="chart4" id="fourthChart">
-  <script>
-    // 1. Copy/paste Live API URL in Vegalite
-    // 2. Copy/Pase code in VS and add to index.htlm to see if it works
-    // 3. Upload on Github
-    var myChart4 = "chart5_covidliveAPI.json";
-    vegaEmbed('#fourthChart', myChart4);
-  </script>
-    </div> 
- </div>   
-    
-  
-    
-<div class="chartbox"> 
-    
-<h3>New Daily Covid cases 2</h3>
-
-    <p>My fifth chart looks at new <strong>Covid-19</strong> cases (linked to live CSV file) </p>
-
-<div class="chart5" id="fifthChart">
-  <script>
-    // 1. Upload raw data onto Github
-    // 2. Copy/Paste URL into Vegalite
-    // 3. Make sure the axis/name are correct
-    // 4. Copy/Pase code in VS and add to index.htlm to see if it works
-    // 5. Upload on Github
-    var myChart5 = "chart6_covidviagithub.json";
-    vegaEmbed('#fifthChart', myChart5);
-  </script>
-    </div> 
-  </div>
+<script>
+  var myChart3 = "chart4_ozoneemissionsAPI.json";
+  vegaEmbed('#thirdChart', myChart3);
+</script>
+</div> 
 </div>
+</div> 
+</div> 
+</div>
+
+<!--Homework week 2: Hosting data-->
+<div class="chartbox">
+    <h4><ins>Week 2 homework:</ins></h4> 
+   
+    <div class="grid-container">
+        <div class="grid-item">
     
+ <h3>New Daily Covid cases</h3>
+<!--beware API doesnt always work, need to edit the api for it to work again-->
+    <p>My fourth chart looks at new Covid-19 cases(using a live API):</p>
 
-<p>Week 3 Homework</p>
+    <div class="chart"> 
+    <div class="chart4" id="fourthChart">
+      <script>
+        var myChart4 = "chart5_covidliveAPI.json";
+        vegaEmbed('#fourthChart', myChart4);
+      </script>
+    </div> 
+    </div>
+   </div>
+   
+   <div class="grid-item">
+    <h3>New Daily Covid cases</h3>
+  
+    <p>My fifth chart looks at new Covid-19 cases (linked to live CSV file):</p>
+  
+    <div class="chart"> 
+  <div class="chart5" id="fifthChart">
+    <script>
+      var myChart5 = "chart6_covidviagithub.json";
+      vegaEmbed('#fifthChart', myChart5);
+    </script>
+  </div> 
+ </div> 
+</div>
+</div>
+</div> 
 
-<div class="grid-container">
- <div class="chartbox"> 
-     
-  <h3>Pie chart</h3>
+<!--Homework week 3: Editing data, writing JSON by hand-->
+<div class="chartbox">
+    <h4><ins>Week 3 homework:</ins></h4> 
+   
+    <div class="grid-container">
+        <div class="grid-item">
+    <h3>Pie chart</h3>
   
-    <p>My sixth chart is a pie chart with one added category </p>
-  
+    <p>My sixth chart is a pie chart with one added category:</p>
+  <div class="chart">
   <div class="chart7" id="seventhChart">
     <script>
       var myChart7 = "piechart.json";
       vegaEmbed('#seventhChart', myChart7);
     </script>
-  </div> 
- </div> 
+  </div>  
+    </div>
+   </div>
+   
+    <div class="grid-item">
+    <h3>US inflation</h3>
+  
+    <p>My seventh chart looks at <strong>US inflation</strong> (where I added one hypothetical value):</p>
 
-    
-    
- <div class="chartbox"> 
-     
-  <h3>US inflation</h3>
-  
-     <p>My seventh chart looks at <strong>US inflation</strong> (where I added one hypothetical value) </p>
-  
+    <div class="chart">
   <div class="chart6" id="sixthChart">
     <script>
-        //1. Find data and download it as a csv file
-        //2. Open in VS, add a line and save the changed document
-        //3. Open Vegalite, change url to your raw data, you will need to change the axis names
-        //4. Then do as usual to add graph to index
       var myChart6 = "USinflation.json";
       vegaEmbed('#sixthChart', myChart6);
     </script>
   </div> 
  </div> 
-</div>
-    
-<p>Week 4 Homework</p>    
-    
-<div class="grid-container">   
-<div class="chartbox"> 
-    
- <h3>Bitcoin API</h3>
- 
-   <p>My eighth chart looks at the <strong>volume traded of Bitcoin</strong></p>
- 
- <div class="chart8" id="eighthChart">
-   <script>
-     var myChart8 = "bitcoin.json";
-     vegaEmbed('#eighthChart', myChart8);
-   </script>
- </div> 
 </div> 
-    
-    
- <div class="chartbox"> 
-     
-   <h3>Ligue 1 API</h3>
+</div>
+</div>
+
+<!--Homework week 4: API driven charts-->
+<div class="chartbox">
+    <h4><ins>Week 4 homework:</ins></h4> 
    
-     <p>My ninth chart looks at the <strong>goals scored away by Ligue 1 top 6 as of week 10</strong></p>
+    <div class="grid-container">
+        <div class="grid-item">
+    <h3>Bitcoin API</h3>
    
-   <div class="chart9" id="ninethChart">
-     <script>
-       var myChart9 = "ligue1.json";
-       vegaEmbed('#ninethChart', myChart9);
-     </script>
-   </div> 
+    <p>My eighth chart looks at the <strong>volume traded of Bitcoin:</strong></p>
+  
+    <div class="chart">
+  <div class="chart8" id="eighthChart">
+    <script>
+      var myChart8 = "bitcoin.json";
+      vegaEmbed('#eighthChart', myChart8);
+    </script>
   </div> 
- </div>
+ </div> 
+  </div> 
+   
+
+    <div class="grid-item">
+ <h3>Ligue 1 API</h3>
+     
+ <p>My ninth chart looks at the <strong>goals scored away by Ligue 1 top 4 as of 5/12/21:</strong></p>
+
+ <div class="chart">
+<div class="chart9" id="ninethChart">
+ <script>
+   var myChart9 = "ligue1.json";
+   vegaEmbed('#ninethChart', myChart9);
+ </script>
+</div> 
+</div> 
+</div> 
+</div>
+</div>
+
+<!--Homework week 5: Loops and APIs-->
+<div class="chartbox">
     
-  <p>Homework Week 5</p>
-  
-  <div class="grid-container">
-    <div class="chartbox"> 
-     <h3>Denmark GDP</h3>
-     
-       <p>My tenth chart looks at the <strong>Danish GDP</strong></p>
-     
-     <div class="chart10" id="tenthChart">
-       <script>
-         var myChart10 = "hw5_denmarkgdp.json";
-         vegaEmbed('#tenthChart', myChart10);
-       </script>
+<h4><ins>Week 5 homework:</ins></h4>
+    <!--use python to upload the graphs into a json format, look in colab week5-->
+    <div class="grid-container">
+        <div class="grid-item">
+    <h3>Burundi GDP</h3>
+       
+     <p>My tenth chart looks at<strong> Burundi's GDP</strong>:</p>
+
+        <div class="chart"> 
+       <div class="chart10" id="tenthChart">
+         <script>
+           var myChart10 = "hw5_burundigdp.json";
+           vegaEmbed('#tenthChart', myChart10);
+         </script>
+    </div> 
+    </div> 
+    </div>
+   
+
+    
+        <div class="grid-item"> 
+    <h3>Finland GDP</h3>
+        
+    <p>My eleventh chart looks at the <strong>Finnish GDP</strong>:</p>
+        
+         <div class="chart"> 
+        <div class="chart11" id="eleventhChart">
+          <script>
+            var myChart11 = "hw5_finlandgdp.json";
+            vegaEmbed('#eleventhChart', myChart11);
+          </script>
+        </div> 
+    </div> 
+    </div>
+    
+        <div class="grid-item">
+    <h3>Russia GDP</h3>
+        
+    <p>My twelfth chart looks at the <strong>Russian GDP</strong>:</p>
+        
+        <div class="chart">  
+        <div class="chart12" id="twelfthChart">
+          <script>
+            var myChart12 = "hw5_russiagdp.json";
+            vegaEmbed('#twelfthChart', myChart12);
+          </script>
+        </div> 
      </div> 
-    </div> 
-  
-  
-    <div class="chartbox"> 
-      <h3>Finland GDP</h3>
-      
-        <p>My eleventh chart looks at the <strong>Finnish GDP</strong></p>
-      
-      <div class="chart11" id="eleventhChart">
-        <script>
-          var myChart11 = "hw5_finlandgdp.json";
-          vegaEmbed('#eleventhChart', myChart11);
-        </script>
-      </div> 
-    </div> 
-  
-  
-     
-    <div class="chartbox"> 
-      <h3>Russia GDP</h3>
-      
-        <p>My twelfth chart looks at the <strong>Russian GDP</strong></p>
-      
-      <div class="chart12" id="twelfthChart">
-        <script>
-          var myChart12 = "hw5_russiagdp.json";
-          vegaEmbed('#twelfthChart', myChart12);
-        </script>
-      </div> 
-   </div> 
-  
-  
+    </div>
     
-   <div class="chartbox"> 
-      <h3>USA GDP</h3>
-      
-        <p>My thirteenth chart looks at the <strong>USA's GDP</strong></p>
-      
-      <div class="chart13" id="thirteenthChart">
+        <div class="grid-item">
+    <h3>USA GDP</h3>
+        
+    <p>My thirteenth chart looks at the <strong>USA's GDP</strong>:</p>
+        
+    <div class="chart"> 
+        <div class="chart13" id="thirteenthChart">
         <script>
           var myChart13 = "hw5_usagdp.json";
           vegaEmbed('#thirteenthChart', myChart13);
         </script>
+        </div> 
       </div> 
-    </div> 
+    </div>  
+</div> 
 </div>
 
+<!--Homework week 7: Loops and scrappers-->
+<div class="chartbox">
+<h4><ins>Week 7 homework:</ins></h4> 
     
+<div class="grid-container">
+    <div class="item-alone">
+    <h3 class="special-text">Happinest countries</h3>
+        
+    <p class="special-text">My fourteenth chart looks at the <strong>Happiness Index</strong>:</p>
+        
+        <div class="chart">
+        <div class="chart14" id="fourteenthChart">
+          <script>
+            var myChart14 = "hw7_happinessindex.json";
+            vegaEmbed('#fourteenthChart', myChart14);
+          </script>
+        </div> 
+       </div> 
+    </div> 
+</div>
+</div>
+
+<!--Homework week 8: Data stories-->
+<div class="chartbox">
+<h4><ins>Week 8 homework:</ins></h4> 
+
+<div class="grid-container">
+    <div class="grid-item">
+   <h3>No lockdown, no recession?</h3>
+   
+      
+     <p>My fifthteenth chart looks at <strong>Danish</strong> and <strong>Swedish</strong> GDP:</p>
+     <div class="chart">
+   <div class="chart15" id="fifthteenthChart">
+     <script>
+       var myChart15 = "hw8_denmarksweden.json";
+       vegaEmbed('#fifthteenthChart', myChart15);
+     </script>
+   </div> 
+  </div> 
+  </div>
+
+  <div class="grid-item">
+    <h3>No lockdown, no recession?</h3>
     
+       
+      <p>My sixthteenth chart looks at <strong>Danish</strong> and <strong>Swedish</strong> growth rates:</p>
+      <div class="chart">
+    <div class="chart16" id="sixthteenthChart">
+      <script>
+        var myChart16 = "hw8_denswe.json";
+        vegaEmbed('#sixthteenthChart', myChart16);
+      </script>
+    </div> 
+   </div> 
+   </div>
+  </div>
+   <!--Commenting the graphs-->
+<p>Reflecting on Flavio Toxvaerd answer to lockdown being the best solution to Covid-19. By comparing Sweden which actively promoted an anti-lockdown policy and Denmark which was one of the first countries to implement lockdown measures, the economic costs are similar.</p>
+<p>It would seem that forcing people to remain home would have an economic cost larger than keeping the economy open, we would expect Swedes to continue to go to work and consume goods, whereas Danes would stay at home, not spending any money in hospitality and national tourism. </p> 
+<p>The data suggests that Sweden suffered a stronger recession than its Nordic counterpart in the second quarter of 2020, both economies quickly recovering in the next quarter. As Sweden is an export-oriented economy, lockdown measures imposed by other countries impacted its economic growth. Thus the easing out of lockdown measures in the summer of 2020 permitted growth in both countries. </p>
+<p>From an economic perspective lockdown measure in Denmark didn’t increase the economic cost in the short term. However, social and mental cost for Sweden and Denmark’s response in the long run would need to be analysed. </p>
+
+
+</div> 
+
+<!--Homework week 9: Advanced analytics-->
+<div class="chartbox">
+    <h4><ins>Week 9 homework:</ins></h4> 
+
+<div class="grid-container">
+    <div class="item-alone"> 
+    <h3 class="special-text">Correlation between indexes</h3> 
+
+    <p class="special-text">My seventeenthteenth chart looks at the correlation between the <strong>Nikkei 225</strong> and the <strong>Dow Jones</strong>:</p>
+        <div class="chart">
+        <div class="chart17" id="seventeenthteenthChart">
+            <img src="https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/index%20price%20reg.png" style="width:310px;height:250px">
+        </div>   
+
+         </div>
+    </div>
+</div>
+</div>
+
+<!--Homework week 10: Interactivity-->
+<div class="chartbox">
+    <h4><ins>Week 8 homework:</ins></h4> 
     
- <p class="footer">provided to you by Matthieu Michaux</p>   
+    <div class="grid-container">
+        <div class="grid-item">
+       <h3>GDP and happiness</h3>
+       
+          
+         <p>My eighteenth chart looks if there is a correlation between<strong> GDP/capita</strong> and <strong>happiness</strong>:</p>
+         <div class="chart">
+       <div class="chart18" id="eighteenthChart">
+         <script>
+           var myChart18 = "pjt_happinessgdp.json";
+           vegaEmbed('#eighteenthChart', myChart18);
+         </script>
+       </div> 
+      </div> 
+      </div>
+    
+      <div class="grid-item">
+        <h3>Life expectancy and happiness</h3>
+        
+        <p>My nineteenth chart looks at a correlation between<strong> life expectancy</strong> and <strong> happiness</strong>:</p>
+        <div class="chart">
+            <div class="chart19" id="nineteenthChart">
+                <script>
+                  var myChart19 = "pjt_hapinesslife.json";
+                  vegaEmbed('#nineteenthChart', myChart19);
+                </script>
+              </div> 
+        </div>
+          
+       </div>
+      </div>
+</div>
+
 </body>
-
-
-
-</html>
