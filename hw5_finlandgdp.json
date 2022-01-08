@@ -19,8 +19,8 @@
           "property": "observations"}
     },
     
-    "height": 300,
-    "width": 300,
+    "height": 250,
+    "width": 270,
     
     "mark": {
       "type": "line",
@@ -44,7 +44,8 @@
         "field": "value",
         "type": "quantitative",
         "title": "",
-        "axis": {"grid": false}
+        "axis": {"grid": false},
+        "scale":{"domain":[10000,60000]}
       }
     }
   }
