@@ -14,9 +14,9 @@
     "format": {"type": "csv"}
   },
   "config": {"background": "#fff1e0", "view": {"stroke": "transparent"}},
-
-  "height": 250,
-  "width": 270,
+  
+  "height": 220,
+  "width": 250,
   
   "mark": "point",
   "selection": {
