@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+       "title": {
+      "text": "Freedom x happiness ",
+      "subtitle":["Source: World Happiness Report","Freedom to make life choices"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_6happyfreedom.csv"},
+   
+  "mark": {"type": "point", "point": true},
+
+  "config": {
+    "background":"#fff1e0",
+    "view": {"stroke": "transparent"}},
+
+  "width":300,
+
+  "encoding": {
+
+    "x": {
+      "field": "happiness", 
+      "type": "quantitative", 
+      "scale":{"domain":[2.5,8]},"title":"Happiness"},
+
+    "y": {
+      "field": "freedom", 
+      "type": "quantitative",
+      "title":"",
+      "scale":{"domain":[0.3,1]}
+      },
+      
+
+    "color": {
+      "field": "country", 
+      "type": "nominal",
+      "title": "",
+      "legend": {"orient": "bottom"}}
+  ,
+
+  "tooltip": [
+              {
+        "field": "country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "date",
+       "type": "temporal", 
+       "title": "Date"},
+      {
+        "field": "freedom",
+        "type": "quantitative",
+        "title": "Freedom",
+        "format": ",.2f"
+      }
+      
+    ]
+}}
