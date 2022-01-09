@@ -1,38 +1,51 @@
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-       "description": "GDP per capita",
+{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Life expectancy data extracted from the World Bank into Excel where the data was sorted and arranged. The World Happiness report has provided the yearly data for happiness",
            "title": {
           "text": "Life expectancy and happiness",
           "subtitle":["Source: World Bank, World Happiness Report","Happiness index"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
           "anchor": "start",
-          "color": "black"},
+          "color": "black"},  
+  "data": {
+    "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiestlife.csv",
+    "format": {"type": "csv"}
+  },
+
+   "config": {
+        "background":"#fff1e0",
+        "view": {"stroke": "transparent"}},
+
     
-    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiestlife.csv"},
+  "height": 250,
+  "width": 270,
+  
+    "mark": "point",
+    "selection": {
+      "Continent": {
+        "type": "single",
+        "fields": ["Continent"],
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+               "Africa", "Asia", "America", "Europe", "Oceania"
+          ],
+          "name": "Continent"
+        }
+      }
+    },
+    "transform": [
+      {"filter": {"selection": "Continent"}}
+    ],
 
-    "params": [{
-    "name": "Place",
-    "select": {"type": "point", "fields": ["Continent"]}
-  }],
-
-  "config": {
-    "background":"#fff1e0",
-    "view": {"stroke": "transparent"}},
-
-    "height": 250,
-    "width": 270,
-
-    "mark": {"type":"point"},
-
-
-    "encoding": {
+  "encoding": {
 
       "x": {
         "field": "life expectancy2020",
         "type": "quantitative",
-         "scale":{"domain":[45,90]},
-        "title":"Life expectancy 2020"
+        "scale":{"domain":[45,90]},
+        "title":"Life expectancy (2020)"
         },
      
       "y": {
@@ -43,14 +56,15 @@
         },
 
       "color": {
-        "legend": {"orient": "bottom"},
+        
         "field": "Continent",
         "type": "nominal",
-        "title":""
+        "title":"",
+        "legend": {"orient": "bottom"}
           },
     
           
-     "tooltip":[{
+      "tooltip":[{
        "field": "Country Name",
        "type": "nominal",
        "title": "Country"
@@ -66,26 +80,5 @@
        "title": "Life expectancy",
        "format": ".2f"
       }]
-    },
-
-    "transform":[{
-      "filter": {
-        "selection": "Place"}
-        }],
-
-    "selection": {
-      "Place": {
-        "type":"point",
-        "fields": ["Continent"],
-        "bind": {
-          "input": "select",
-          "options": [null, "Africa", "Asia", "America", "Europe", "Oceania"],
-          "name":"Pick a continent"
-          
-              }
- 
-            }
-          }
+    }
 }
-
-  
