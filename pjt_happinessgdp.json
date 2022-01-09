@@ -1,6 +1,6 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-     "description": "GNI per capita",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+ "description": "Data retieved from the World Bank (GNI per capita using Atlas Method), arranged in excel and uploaded into a csv on Github. THe happiness index is extracted from the World Happiness report, it has been processed in a similar way. The data sets were then merged into this csv file",
          "title": {
         "text": "GNI per capita and happiness",
         "subtitle":["Source: World Bank, World Happiness Report","Happiness index"],
@@ -8,76 +8,61 @@
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
-  
-  "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiest.csv"},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiest.csv",
+    "format": {"type": "csv"}
+  },
+  "config": {"background": "#fff1e0", "view": {"stroke": "transparent"}},
 
   "height": 250,
   "width": 270,
-
-  "mark": {"type":"point"},
-
-"params": [{
-  "name": "Place",
-  "select": {"type": "point", "fields": ["Studied"]}
-}],
-
-"config": {
-  "background":"#fff1e0",
-  "view": {"stroke": "transparent"}},
+  
+  "mark": "point",
+  "selection": {
+    "Studied": {
+      "type": "single",
+      "fields": ["Studied"],
+      "bind": {
+        "input": "select",
+        "options": [null, "HIC","MIC","LIC"],
+        "name": "Income level"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "Studied"}}],
   "encoding": {
-
     "x": {
-      "field": "GNI",
+       "field": "GNI",
       "type": "quantitative",
       "title":"GNI per capita (US$)"
-      },
-   
+    },
     "y": {
       "field": "happiness2021",
       "type": "quantitative",
-      "scale":{"domain":[2,8]},
-      "title":""
-      },
-   
-   "color": {
+      "scale": {"domain": [2, 8]},
+      "title": ""
+    },
+    "color": {
       "legend": {"orient": "bottom"},
       "field": "Studied",
       "type": "nominal",
       "title":""
-        },
-        
-   "tooltip":[{
-     "field": "country",
-     "type": "nominal",
-     "title": "Country"
-     },
-    {
-     "field": "happiness2021",
-     "type": "quantitative", 
-     "title": "Happiness index"},
-    {
-     "field": "GNI",
-    "type": "quantitative",
-    "title": "GNI per capita (US$)"
-    }]
-  }, 
-  "transform":[{
-    "filter": {
-      "selection": "Place"}
-      }],
-
-   "selection": {
-    "Place": {
-      "type":"point",
-      "fields": ["Studied"],
-      "bind": {
-        "input": "select",
-        "options": [null,"HIC","MIC","LIC"],
-        "name":"Country income level"
-        
-            }
-
-          }
-        }
-
+    },
+    "tooltip": [
+      {"field": "country", 
+      "type": "nominal", 
+      "title": "Country"},
+      {
+      "field": "happiness2021",
+      "type": "quantitative",
+      "title": "Happiness index"
+      },
+      {
+      "field": "GNI",
+      "type": "quantitative",
+      "title": "GNI per capita (US$)"
+      }
+    ]
+  }
 }
