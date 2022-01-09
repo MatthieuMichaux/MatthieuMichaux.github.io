@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chinese GNI and life expectancy, data extracted from the World Bank, sorted, cleaned and arranged on excel",
+  "title": {
+    "text": "Chinese trends: GNI per capita and life expectancy",
+    "subtitle": "Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_chinagnilife.csv"
+  },
+  "width": 250,
+  "height": 200,
+  "config": {"background": "#fff1e0", "view": {"stroke": "transparent"}},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "title": "Date",
+      "type": "temporal",
+      "timeUnit": "year"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "salmon"},
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "title": "GNI per capita (US$)",
+          "field": "GNI",
+          "axis": {
+            "grid": false,
+            "tickColor": "salmon",
+            "domainColor": "salmon",
+            "domainWidth": 1.5
+          }
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "steelblue"},
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "expectancy",
+          "title": "Life expectancy",
+          "scale": {"domain": [66, 80]},
+          "axis": {
+            "grid": false,
+            "tickColor": "steelblue",
+            "domainColor": "steelblue",
+            "domainWidth": 1.5
+          }
+        }
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "black"},
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 1, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "GNI",
+            "type": "quantitative",
+            "title": "GNI per capita (US$)"
+          },
+          {
+            "field": "expectancy",
+            "type": "quantitative",
+            "title": "Life expectancy",
+            "format": ".2f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}}
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
