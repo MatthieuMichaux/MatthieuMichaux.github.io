@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       "description": "GNI per capita",
+           "title": {
+          "text": "GNI per capita and happiness",
+          "subtitle":["Source: World Bank, World Happiness Report","Happiness index"],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+    "data": {"url": "https://raw.githubusercontent.com/MatthieuMichaux/MatthieuMichaux.github.io/main/pjt_happiest.csv"},
+  
+    "height": 250,
+    "width": 270,
+  
+    "mark": {"type":"point"},
+  
+
+    "encoding": {
+  
+      "x": {
+        "field": "GNI",
+        "type": "quantitative",
+        "title":"GNI per capita (US$)"
+        },
+     
+      "y": {
+        "field": "happiness2021",
+        "type": "quantitative",
+        "scale":{"domain":[2,8]},
+        "title":""
+        },
+     
+     "color": {
+        "legend": {"orient": "bottom"},
+        "field": "Studied",
+        "type": "nominal",
+        "title":""
+          },
+          
+     "tooltip":[{
+       "field": "country",
+       "type": "nominal",
+       "title": "Country"
+       },
+      {
+       "field": "happiness2021",
+       "type": "quantitative", 
+       "title": "Happiness index"},
+      {
+       "field": "GNI",
+      "type": "quantitative",
+      "title": "GNI per capita (US$)"
+      }]
+    }
+  
+  }
+  
