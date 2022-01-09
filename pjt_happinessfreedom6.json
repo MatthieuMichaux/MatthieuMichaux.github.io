@@ -16,9 +16,9 @@
   "config": {
     "background":"#fff1e0",
     "view": {"stroke": "transparent"}},
-
-  "width":270,
-  "height":250,
+  
+    "height": 220,
+    "width": 250,
 
   "encoding": {
 
